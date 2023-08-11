@@ -28,4 +28,3 @@ jobs:
           args: release --rm-dist
         env:
           CGO_ENABLED: 0
-          GITHUB_TOKEN: ${{ secrets.RELEASE_GH_TOKEN }}
