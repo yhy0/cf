@@ -1,7 +1,6 @@
 name: Release
 
 on:
-  workflow_dispatch:
   push:
     tags:
       - 'v*'
@@ -28,3 +27,4 @@ jobs:
           args: release --rm-dist
         env:
           CGO_ENABLED: 0
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
